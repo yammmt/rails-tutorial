@@ -67,6 +67,12 @@ class User < ApplicationRecord
     reset_sent_at < 2.hours.ago
   end
 
+  # feed (beta)
+  # full version will be coming with next chapter
+  def feed
+    Micropost.where("user_id = ?", id)
+  end
+
   private
 
     # use downcase as email address
