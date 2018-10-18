@@ -98,3 +98,5 @@ flycheck_*.el
 # projectiles files
 .projectile
 
+# uploaded pictures
+/public/uploads
